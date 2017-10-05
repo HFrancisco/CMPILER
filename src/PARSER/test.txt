@@ -1,0 +1,8 @@
+begin
+ let x be 10
+ let y be 10
+ add x to y
+ add 3 to x
+ print x
+ print y
+end
