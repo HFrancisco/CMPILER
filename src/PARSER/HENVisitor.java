@@ -1,6 +1,4 @@
-// Generated from C:\Users\Harry\HEN.g4 by ANTLR 4.7
-package PARSER;
-
+// Generated from HEN.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -24,11 +22,11 @@ public interface HENVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStatement(HENParser.StatementContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link HENParser#assign}.
+	 * Visit a parse tree produced by {@link HENParser#loop_statement}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitAssign(HENParser.AssignContext ctx);
+	T visitLoop_statement(HENParser.Loop_statementContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link HENParser#print}.
 	 * @param ctx the parse tree
@@ -36,9 +34,51 @@ public interface HENVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPrint(HENParser.PrintContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link HENParser#gets}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitGets(HENParser.GetsContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link HENParser#add}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitAdd(HENParser.AddContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HENParser#divide}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDivide(HENParser.DivideContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HENParser#multiply}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMultiply(HENParser.MultiplyContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HENParser#subtract}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSubtract(HENParser.SubtractContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HENParser#for_loop}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFor_loop(HENParser.For_loopContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HENParser#do_while_loop}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDo_while_loop(HENParser.Do_while_loopContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HENParser#while_loop}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitWhile_loop(HENParser.While_loopContext ctx);
 }

@@ -1,6 +1,4 @@
-// Generated from C:\Users\Harry\HEN.g4 by ANTLR 4.7
-package PARSER;
-
+// Generated from HEN.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -29,15 +27,15 @@ public interface HENListener extends ParseTreeListener {
 	 */
 	void exitStatement(HENParser.StatementContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link HENParser#assign}.
+	 * Enter a parse tree produced by {@link HENParser#loop_statement}.
 	 * @param ctx the parse tree
 	 */
-	void enterAssign(HENParser.AssignContext ctx);
+	void enterLoop_statement(HENParser.Loop_statementContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link HENParser#assign}.
+	 * Exit a parse tree produced by {@link HENParser#loop_statement}.
 	 * @param ctx the parse tree
 	 */
-	void exitAssign(HENParser.AssignContext ctx);
+	void exitLoop_statement(HENParser.Loop_statementContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HENParser#print}.
 	 * @param ctx the parse tree
@@ -49,6 +47,16 @@ public interface HENListener extends ParseTreeListener {
 	 */
 	void exitPrint(HENParser.PrintContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link HENParser#gets}.
+	 * @param ctx the parse tree
+	 */
+	void enterGets(HENParser.GetsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#gets}.
+	 * @param ctx the parse tree
+	 */
+	void exitGets(HENParser.GetsContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link HENParser#add}.
 	 * @param ctx the parse tree
 	 */
@@ -58,4 +66,64 @@ public interface HENListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAdd(HENParser.AddContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HENParser#divide}.
+	 * @param ctx the parse tree
+	 */
+	void enterDivide(HENParser.DivideContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#divide}.
+	 * @param ctx the parse tree
+	 */
+	void exitDivide(HENParser.DivideContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HENParser#multiply}.
+	 * @param ctx the parse tree
+	 */
+	void enterMultiply(HENParser.MultiplyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#multiply}.
+	 * @param ctx the parse tree
+	 */
+	void exitMultiply(HENParser.MultiplyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HENParser#subtract}.
+	 * @param ctx the parse tree
+	 */
+	void enterSubtract(HENParser.SubtractContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#subtract}.
+	 * @param ctx the parse tree
+	 */
+	void exitSubtract(HENParser.SubtractContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HENParser#for_loop}.
+	 * @param ctx the parse tree
+	 */
+	void enterFor_loop(HENParser.For_loopContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#for_loop}.
+	 * @param ctx the parse tree
+	 */
+	void exitFor_loop(HENParser.For_loopContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HENParser#do_while_loop}.
+	 * @param ctx the parse tree
+	 */
+	void enterDo_while_loop(HENParser.Do_while_loopContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#do_while_loop}.
+	 * @param ctx the parse tree
+	 */
+	void exitDo_while_loop(HENParser.Do_while_loopContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HENParser#while_loop}.
+	 * @param ctx the parse tree
+	 */
+	void enterWhile_loop(HENParser.While_loopContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#while_loop}.
+	 * @param ctx the parse tree
+	 */
+	void exitWhile_loop(HENParser.While_loopContext ctx);
 }

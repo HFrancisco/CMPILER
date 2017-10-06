@@ -1,0 +1,12 @@
+function { 
+ x9 gets 10
+ yyy gets doob
+ A gets 1
+ Bb gets c
+ Z gets x9 add A
+ print x9
+ print yyy
+ print A
+ print Bb
+ print Z
+}

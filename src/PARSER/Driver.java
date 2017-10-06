@@ -13,7 +13,7 @@ public class Driver {
 
 		try {
 	        ANTLRInputStream input = new ANTLRInputStream(
-	            new FileInputStream("C:/Users/Harry/eclipse-workspace/CMPILER/src/PARSER/test.txt"));
+	            new FileInputStream("C:/Users/Harry/eclipse-workspace/CMPILER_2/src/PARSER/test2.txt"));
 
 	        HENLexer lexer = new HENLexer(input);
 	        HENParser parser = new HENParser(new CommonTokenStream(lexer));
