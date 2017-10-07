@@ -1,4 +1,6 @@
 // Generated from HEN.g4 by ANTLR 4.7
+package PARSER;
+
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -27,6 +29,12 @@ public interface HENVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitLoop_statement(HENParser.Loop_statementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HENParser#var_name}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVar_name(HENParser.Var_nameContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link HENParser#print}.
 	 * @param ctx the parse tree

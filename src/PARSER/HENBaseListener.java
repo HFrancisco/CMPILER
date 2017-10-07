@@ -1,4 +1,5 @@
 // Generated from HEN.g4 by ANTLR 4.7
+package PARSER;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -46,6 +47,18 @@ public class HENBaseListener implements HENListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitLoop_statement(HENParser.Loop_statementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVar_name(HENParser.Var_nameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVar_name(HENParser.Var_nameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

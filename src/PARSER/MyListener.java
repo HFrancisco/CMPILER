@@ -21,7 +21,7 @@ public class MyListener extends HENBaseListener {
         // parsing the assign statement
 
         // Get variable name
-        //String variableName = ctx.ID(0).getText();
+        //String variableName = ctx.var_name().getText();
 
         // Get value from variable or number
         //String value = ctx.ID().size() > 1 ? ctx.ID(1).getText() 

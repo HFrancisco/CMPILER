@@ -1,4 +1,6 @@
 // Generated from HEN.g4 by ANTLR 4.7
+package PARSER;
+
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -36,6 +38,16 @@ public interface HENListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitLoop_statement(HENParser.Loop_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HENParser#var_name}.
+	 * @param ctx the parse tree
+	 */
+	void enterVar_name(HENParser.Var_nameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HENParser#var_name}.
+	 * @param ctx the parse tree
+	 */
+	void exitVar_name(HENParser.Var_nameContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HENParser#print}.
 	 * @param ctx the parse tree

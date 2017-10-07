@@ -1,4 +1,6 @@
 // Generated from HEN.g4 by ANTLR 4.7
+package PARSER;
+
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -31,6 +33,13 @@ public class HENBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements HE
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitLoop_statement(HENParser.Loop_statementContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitVar_name(HENParser.Var_nameContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

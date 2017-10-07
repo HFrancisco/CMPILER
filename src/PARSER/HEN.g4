@@ -5,9 +5,10 @@ program    : 'function {' statement+ '}';
 
 statement        : gets | add | print | divide | multiply | subtract | loop_statement ;
 loop_statement   : for_loop | do_while_loop | while_loop ;
+var_name         : STRING | CHAR ; 
 
 print            : 'print' (CHAR | STRING | INTEGER | FLOAT | ARRAY) ; 
-gets             : (STRING | CHAR) 'gets' (STRING | CHAR | INTEGER | FLOAT) ;
+gets             : (var_name) 'gets' (STRING | CHAR | INTEGER | FLOAT) ;
 add              : (INTEGER | FLOAT) 'add' (INTEGER | FLOAT) ;
 divide           : (INTEGER | FLOAT) 'div' (INTEGER | FLOAT) ;
 multiply         : (INTEGER | FLOAT) 'mult' (INTEGER | FLOAT) ;

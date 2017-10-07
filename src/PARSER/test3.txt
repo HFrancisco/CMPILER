@@ -1,0 +1,20 @@
+x gets 10;
+y gets 20;
+A gets Aa1;
+Bb gets b2;
+cc gets C3;
+
+z gets x + y;
+y gets y/x;
+x gets x * y;
+
+for(i gets 0; i < 10; i++){
+	print i;
+}
+
+print x;
+print y;
+print z;
+print A;
+print Bb;
+print cc;

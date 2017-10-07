@@ -11,7 +11,7 @@ public class Driver {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		try {
+		/*try {
 	        ANTLRInputStream input = new ANTLRInputStream(
 	            new FileInputStream("C:/Users/Harry/eclipse-workspace/CMPILER_2/src/PARSER/test2.txt"));
 
@@ -23,7 +23,20 @@ public class Driver {
 	        parser.program(); 
 	    } catch (IOException e) {
 	        e.printStackTrace();
-	    }
+	    }*/
+		
+		Lexer lexer = new Lexer("C:/Users/Harry/eclipse-workspace/CMPILER_2/src/PARSER/test3.txt");
+
+        while (!lexer.isExhausted()) {
+            System.out.printf("%-18s %s\n", lexer.currentToken(), lexer.currentLexema());
+            lexer.moveAhead();
+        }
+
+        if (lexer.isSuccessful()) {
+            System.out.println("Ok! :D");
+        } else {
+            System.out.println(lexer.errorMessage());
+        }
 		
 	}
 
