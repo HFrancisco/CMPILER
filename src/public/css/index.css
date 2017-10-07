@@ -1,0 +1,40 @@
+:root{
+    --background-color: #0f0f0f;
+    --text-area: #2f2f2f;
+    --white: #FFF;
+    --accent: #d58b76;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--background-color);
+    color: var(--white);
+}
+
+h1 {
+    color: var(--accent);
+}
+
+hr {
+    border-color: var(--accent);
+}
+
+
+p {
+    font-size: 3.5em;
+}
+#input{
+    background-color: var(--text-area);
+    min-height: 30vh;
+    color: var(--white);
+}
+
+.input-container {
+    display: table;
+
+}
+
+.header {
+    display: table-cell;
+    vertical-align: middle;
+}

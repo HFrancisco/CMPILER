@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gitignore
+.idea/
+CMPILER.iml
+src/PARSER/Driver.java
+bin/PARSER/test.txt
+bin/PARSER/test2.txt
+bin/PARSER/test3.txt

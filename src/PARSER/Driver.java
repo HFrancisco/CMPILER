@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 
+
 public class Driver {
 
 	public static void main(String[] args) {
@@ -24,8 +25,7 @@ public class Driver {
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }*/
-		
-		Lexer lexer = new Lexer("C:/Users/Harry/eclipse-workspace/CMPILER_2/src/PARSER/test3.txt");
+		Lexer lexer = new Lexer("/Users/neilsongardose/Projects/JavaProjects/src/PARSER/test3.txt");
 
         while (!lexer.isExhausted()) {
             System.out.printf("%-18s %s\n", lexer.currentToken(), lexer.currentLexema());
