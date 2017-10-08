@@ -1,7 +1,6 @@
 package PARSER;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -25,11 +24,37 @@ public class Driver {
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }*/
-		Lexer lexer = new Lexer("/Users/neilsongardose/Projects/JavaProjects/src/PARSER/test3.txt");
+		Lexer lexer = new Lexer("C:\\Users\\Endrey\\Documents\\CMPILER\\src\\PARSER\\test3.txt");
+
+        StringBuilder output = new StringBuilder();
 
         while (!lexer.isExhausted()) {
             System.out.printf("%-18s %s\n", lexer.currentToken(), lexer.currentLexema());
+            output.append(String.format("%-18s %s\n", lexer.currentToken(), lexer.currentLexema()));
             lexer.moveAhead();
+        }
+
+        String filename = "C:\\Users\\Endrey\\Documents\\CMPILER\\src\\PARSER\\lexer_output.txt";
+        BufferedWriter bw =null ;
+        FileWriter fw =null;
+
+        try{
+            fw = new FileWriter(filename);
+            bw = new BufferedWriter(fw);
+            bw.write(output.toString());
+
+            System.out.print("done");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (bw != null)
+                    bw.close();
+                if (fw != null)
+                    bw.close();
+            } catch (IOException io){
+                io.printStackTrace();
+            }
         }
 
         if (lexer.isSuccessful()) {
