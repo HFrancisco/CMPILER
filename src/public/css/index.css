@@ -3,6 +3,7 @@
     --text-area: #2f2f2f;
     --white: #FFF;
     --accent: #d58b76;
+    --transition: .1s;
 }
 
 body {
@@ -24,10 +25,35 @@ p {
     font-size: 3.5em;
 }
 #input{
-    background-color: var(--text-area);
+    background-color: var(--background-color);
     min-height: 30vh;
     color: var(--white);
+    width: 100%;
+    overflow: auto;
+    outline: none;
 }
+#input::-webkit-scrollbar{
+    background-color: rgba(0,0,0,0);
+    height: 1vh;
+}
+#input::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+
+}
+
+#play {
+    background-color: var(--text-area);
+    color: var(--accent);
+    transition: var(--transition);
+}
+
+#play:hover {
+    background-color: var(--accent);
+    color: var(--text-area);
+    cursor: pointer;
+}
+
+
 
 .input-container {
     display: table;
@@ -37,4 +63,54 @@ p {
 .header {
     display: table-cell;
     vertical-align: middle;
+}
+
+
+
+/*asdadasdasd*/
+.linedwrap {
+    border: 1px solid #c0c0c0;
+    padding: 3px;
+}
+
+.linedtextarea {
+    padding: 0px;
+    margin: 0px;
+}
+
+.linedtextarea textarea, .linedwrap .codelines .lineno {
+    font-size: 10pt;
+    font-family: monospace;
+    line-height: normal !important;
+}
+
+.linedtextarea textarea {
+    padding-right:0.3em;
+    padding-top:0.3em;
+    border: 0;
+}
+
+.linedwrap .lines {
+    margin-top: 0px;
+    width: 50px;
+    float: left;
+    overflow: hidden;
+    border-right: 1px solid #c0c0c0;
+    margin-right: 10px;
+}
+
+.linedwrap .codelines {
+    padding-top: 5px;
+}
+
+.linedwrap .codelines .lineno {
+    color:#AAAAAA;
+    padding-right: 0.5em;
+    padding-top: 0.0em;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.linedwrap .codelines .lineselect {
+    color: red;
 }
