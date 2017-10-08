@@ -38,12 +38,20 @@ public class Driver {
         BufferedWriter bw =null ;
         FileWriter fw =null;
 
+
+        if (lexer.isSuccessful()) {
+            System.out.println("Ok! :D");
+            output.append("OK! :D");
+        } else {
+            System.out.println(lexer.errorMessage());
+            output.append(lexer.errorMessage());
+        }
+
         try{
             fw = new FileWriter(filename);
             bw = new BufferedWriter(fw);
             bw.write(output.toString());
 
-            System.out.print("done");
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -57,11 +65,7 @@ public class Driver {
             }
         }
 
-        if (lexer.isSuccessful()) {
-            System.out.println("Ok! :D");
-        } else {
-            System.out.println(lexer.errorMessage());
-        }
+
 		
 	}
 
